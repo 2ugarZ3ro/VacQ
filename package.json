@@ -1,0 +1,29 @@
+{
+  "name": "a-4-2ugarz3ro",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/WpvFJGGy)",
+  "homepage": "https://github.com/2110503-67CP/a-4-2ugarZ3ro#readme",
+  "bugs": {
+    "url": "https://github.com/2110503-67CP/a-4-2ugarZ3ro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2110503-67CP/a-4-2ugarZ3ro.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

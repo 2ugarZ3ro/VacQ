@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
 
 //Load env vars
@@ -10,15 +11,20 @@ connectDB();
 
 const app = express();
 
-//add body parser
+//Body parser
 app.use(express.json());
+
+//Cookie parser
+app.use(cookieParser());
 
 //Route files
 const hospitals = require('./routes/hospitals');
 const { connect } = require('mongoose');
+const auth = require('./routes/auth');
 
 //Mount routers
 app.use('/api/v1/hospitals', hospitals);
+app.use('/api/v1/auth', auth);
 
 const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, console.log('Server running in ', process.env.NODE_ENV, ' mode on port ', PORT));
